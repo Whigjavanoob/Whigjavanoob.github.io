@@ -150,6 +150,130 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-JDBC" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/13/JDBC/">JDBC</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/13/JDBC/" class="archive-article-date">
+  	<time datetime="2020-05-13T09:15:18.425Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/13/JDBC/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-MySQL" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/13/MySQL/">MySQL</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/13/MySQL/" class="archive-article-date">
+  	<time datetime="2020-05-13T08:10:07.359Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/13/MySQL/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Java基础注意事项" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -184,8 +308,12 @@
 <h3 id="6-1-概念总结"><a href="#6-1-概念总结" class="headerlink" title="6.1 概念总结"></a>6.1 概念总结</h3><p>&#8195;&#8195;1) 数组将数组与对象联系起来，它保存类型明确的对象，在查询对象时，不需要对结果做类型转换。它可以时多维的，可以保存基本类型的数据。但是，数组一旦生成，其容量就不能改变。<br><br>&#8195;&#8195;2)<strong>Collection</strong>保存单一的元素，而<strong>Map</strong>保存相关联的键值对。有了Java的泛型，你就可以指定容器中存放的对象类型，因此你就不会将错误类型的对象放置到容器中，并且在容器中获取元素时，不必进行类型转换。各种<strong>Collection</strong>和<strong>Map</strong>都可以在你向其中添加更多的元素时，自动调节其尺寸。容器不能持有基本类型数据(int double ..),但是自动包装机制会仔细地执行基本类型到容器中所持有的包装器类型之间的双向转换。<br><br>&#8195;&#8195;3)像数组一样，<strong>List</strong>也建立数组索引与对象的关联，因此，数组和List都是排好序的容器，List能够自动扩充容量。<br><br>&#8195;&#8195;4）如果要进行大量的随机访问，就是用<strong>ArrayList</strong>;如果要经常从表中间插入或删除元素。则应该使用<strong>LinkedList</strong>.<br><br>&#8195;&#8195;5)<strong>Set</strong>不接受重复元素。<strong>HashSet</strong>提供最快的查询速度，而<strong>TreeSet</strong>保持元素处于排序状态。<strong>LinkedHashSet</strong>以插入顺序保存元素。</p>
 <h3 id="6-2Collections-类操作集合"><a href="#6-2Collections-类操作集合" class="headerlink" title="6.2Collections 类操作集合"></a>6.2Collections 类操作集合</h3><p>&#8195;&#8195;直接上代码，代码里有方法介绍。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  这个类只包含操作或返回集合的静态方法。它包含多态算法操作的集合，“包装”，它返回一个按指定的集合支持的新的集合</span></span><br><span class="line"><span class="comment">  **因为这方法为静态方法 所以直接类形成。成员方法（）；  就可以不用创建对象来调用了</span></span><br><span class="line"><span class="comment">        method:</span></span><br><span class="line"><span class="comment">              static &lt;T&gt; boolean addAll(Collection&lt;? super T&gt; c, T... elements  //返回类型为Boolean  第一个参数是操作集合类型，第二个是可变参数（可以添加多个参数）</span></span><br><span class="line"><span class="comment">              static void shuffle(List&lt;?&gt; list)   就是打乱元素的排序 这个只能传递List集合 ，不能传递Set集合</span></span><br><span class="line"><span class="comment">              static void sort(List&lt;T&gt; list)指定列表为升序排序，根据其元素的 natural ordering（升序牌续）只能对list集合。</span></span><br><span class="line"><span class="comment">              /*</span></span><br><span class="line"><span class="comment">        static void sort(List&lt;T&gt; list)注意使用前提：</span></span><br><span class="line"><span class="comment">                    被排序里边的存储元素类型（String Integer Person）必须实现Comparable接口</span></span><br><span class="line"><span class="comment">                     public final class String implements  Comparable&lt;String&gt; 源码135行  重写 public int compareTo(T o);</span></span><br><span class="line"><span class="comment">                    如果想要自定义一个类 排序 必须实现接口Comparable 并且重写 ComaparaeTo（）定义排序规则的方法：</span></span><br><span class="line"><span class="comment">                    ComaparaeTo（）定义排序规则：</span></span><br><span class="line"><span class="comment">                                                (自己)this-参数===升序</span></span><br><span class="line"><span class="comment">                                                参数-this===降序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Array;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collection;</span><br><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CollectionMethod</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; arrayList=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="comment">//静态方法  就是直接类型称。方法名（） 可以对一个集合同时添加多个元素</span></span><br><span class="line">        Collections.addAll(arrayList,<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>);  <span class="comment">//这个方法就是等效 arrayList.add(1);arrayList.add(2);.....可变参数很强</span></span><br><span class="line">        System.out.println(arrayList);</span><br><span class="line">        System.out.println(<span class="string">"----------"</span>);</span><br><span class="line">        <span class="comment">//Arraylist是List接口的继承集合，，测试一下set接口的集合成立</span></span><br><span class="line">        Set&lt;String&gt; hashlist=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">        Collections.addAll(hashlist,<span class="string">"whig"</span>,<span class="string">"ahui"</span>,<span class="string">"huishao"</span>);</span><br><span class="line">        System.out.println(hashlist);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//static void shuffle(List&lt;?&gt; list)   打乱集合（只能是实现List接口的集合）元素的排序  如果是Set接口的集合本来就是乱序的</span></span><br><span class="line">        System.out.println(<span class="string">"---------"</span>);</span><br><span class="line">        Collections.shuffle(arrayList);</span><br><span class="line">        System.out.println(arrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"----------------"</span>);</span><br><span class="line">        <span class="comment">// static void sort(List&lt;T&gt; list)指定列表为升序排序，根据其元素的 natural ordering（升序牌续）只能对list集合。</span></span><br><span class="line">        ArrayList&lt;Integer&gt; sortarraylist=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        Collections.addAll(sortarraylist,<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">7</span>);</span><br><span class="line">        System.out.println(sortarraylist);</span><br><span class="line">        Collections.sort(sortarraylist);</span><br><span class="line">        System.out.println(<span class="string">"排序之后"</span>+sortarraylist);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-自动装箱与自动拆箱"><a href="#7-自动装箱与自动拆箱" class="headerlink" title=" 7.自动装箱与自动拆箱 "></a><table><tr><td bgcolor=LightGray> 7.自动装箱与自动拆箱 </td></tr></table></h2><p><strong>装箱</strong>：将基本类型用它们对应的引用类型包装起来;例如 int-&gt;Integer double-&gt;Double<br><br><strong>拆箱</strong>：将包装类型转换为基本数据类型；例如 Integer-?int  Double-&gt;double</p>
-<h2 id="8-接口和抽象类的区别"><a href="#8-接口和抽象类的区别" class="headerlink" title=" 8.接口和抽象类的区别 "></a><table><tr><td bgcolor=LightGray> 8.接口和抽象类的区别 </td></tr></table></h2><p>&#8195;&#8195;1)接口的方法默认是 public，所有方法在接口中不能有实现(Java 8 开始接口方法可以有默认实现），而抽象类可以有非抽象的方法。<br><br>&#8195;&#8195;2)接口中除了static、final变量，不能有其他变量，而抽象类中则不一定。<br><br>&#8195;&#8195;3)一个类可以实现多个接口，但只能实现一个抽象类。接口自己本身可以通过extends关键字扩展多个接口。<br>接口方法默认修饰符是public，抽象方法可以有public、protected和default这些修饰符（抽象方法就是为了被重写所以不能使用private关键字修饰！）。<br><br>&#8195;&#8195;4)从设计层面来说，抽象是对类的抽象，是一种模板设计，而接口是对行为的抽象，是一种行为的规范。</p>
+<h2 id="7-自动装箱与自动拆箱"><a href="#7-自动装箱与自动拆箱" class="headerlink" title=" 7.自动装箱与自动拆箱 "></a><table><tr><td bgcolor=LightGray> 7.自动装箱与自动拆箱 </td></tr></table></h2><p><strong>装箱</strong>：将基本类型用它们对应的引用类型包装起来;例如 int-&gt;Integer double-&gt;Double<br><br><strong>拆箱</strong>：将包装类型转换为基本数据类型；例如 Integer-&gt;int  Double-&gt;double</p>
+<h2 id="8-接口和抽象类的区别"><a href="#8-接口和抽象类的区别" class="headerlink" title=" 8.接口和抽象类的区别 "></a><table><tr><td bgcolor=LightGray> 8.接口和抽象类的区别 </td></tr></table></h2><p>&#8195;&#8195;1)接口的方法默认是 public，所有方法在接口中不能有实现(Java 8 开始接口方法可以有默认实现），而抽象类可以有非抽象的方法。<br><br>&#8195;&#8195;2)接口中除了static、final变量，不能有其他变量，而抽象类中则不一定。<br><br>&#8195;&#8195;3)一个类可以实现多个接口，但只能实现一个抽象类。接口自己本身可以通过extends关键字扩展多个接口。接口方法默认修饰符是public，抽象方法可以有public、protected和default这些修饰符（抽象方法就是为了被重写所以不能使用private关键字修饰！）。<br><br>&#8195;&#8195;4)从设计层面来说，抽象是对类的抽象，是一种模板设计，而接口是对行为的抽象，是一种行为的规范。</p>
+<h2 id="9-return-用法"><a href="#9-return-用法" class="headerlink" title=" 9.return 用法 "></a><table><tr><td bgcolor=LightGray> 9.return 用法 </td></tr></table></h2><p>&#8195;&#8195;1返回方法指定类型的值  例如public String method(){ String a=”whig”; return s ;}<br><br>&#8195;&#8195;2)结束方法的执行（仅仅一个return ;）就可以</p>
+<h2 id="10-多线程"><a href="#10-多线程" class="headerlink" title=" 10.多线程 "></a><table><tr><td bgcolor=LightGray> 10.多线程 </td></tr></table></h2><p>&#8195;&#8195;1）创建线程：继承Thread类我们重写Thread类的run方法，但却调用了start方法，那么run方法和start方法有什么关系呢？<br><br>&#8195;&#8195;2)其实，线程的真正的执行逻辑在run方法中，通常我们把run方法称为线程的执行单元，这就是我们最开始提出的质疑，重写run方法，用statr方法启动线程。<br><br>&#8195;&#8195;3)<strong>准确的讲，创建线程只有一种方式那就是创建Thread类，而实现线程的执行单元则有两种方式，第一种就是重写Thread类的run方法，第二种是想实现Runnable接口的run方法，并且将Runnable实例则用作构造Thread的参数</strong>但在实际中创建线程最好使用Runnable接口，因为java中是单继承但是可以实现多个接口，避免了占用其他要继承的类。<br><br>&#8195;&#8195;4)<strong>重写Thread类的run方法和实现Runnable接口的run方法还有一个很重要的不同那就是Thread类的run方法是不能共享的，而使用Runnable接口则就很容易实现这一点，使用同一个Runnable的实例构造不同的Thread实例。</strong></p>
+<h3 id="10-1-线程父子关系"><a href="#10-1-线程父子关系" class="headerlink" title="10.1 线程父子关系"></a>10.1 线程父子关系</h3><p>&#8195;&#8195;Thread的所有构造函数都会调用一个静态方法Init,1.一个线程的创建可定是由另一个线程完成的。2.被创建线程的父线程是创建它的线程。<br><br>&#8195;&#8195;我们都知道main函数所在的线程是由JVM创建的，也就是main线程，那就意味着我们创建的所有的线程，其父线程都是main线程。</p>
+<h2 id="11-null"><a href="#11-null" class="headerlink" title=" 11.null "></a><table><tr><td bgcolor=LightGray> 11.null </td></tr></table></h2><p>1）首先，null是Java中的关键字，像public、static、final。它是大小写敏感的，你不能将null写成Null或NULL，编译器将不能识别它们然后报错。<br><br>2)就像每种原始类型都有默认值一样，如int默认值为0，boolean的默认值为false，null是任何引用类型的默认值，不严格的说是所有object类型的默认值。就像你创建了一个布尔类型的变量，它将false作为自己的默认值，Java中的任何引用变量都将null作为默认值。<br><br>3)null既不是对象也不是一种类型，它仅是一种特殊的值，你可以将其赋予任何引用类型，你也可以将null转化成任何类型.<br><br>4)null可以赋值给引用变量，你不能将null赋给基本类型变量，例如int、double、float、boolean。如果你那样做了，编译器将会报错.<br><br>5)任何含有null值的包装类在Java拆箱生成基本数据类型时候都会抛出一个空指针异常。一些程序员犯这样的错误，他们认为自动装箱会将null转换成各自基本类型的默认值，例如对于int转换成0，布尔类型转换成false，但是那是不正确的.<br><br>6)如果使用了带有null值的引用类型变量，instanceof操作将会返回false：<br><br>7)你可以使用==或者!=操作来比较null值，但是不能使用其他算法或者逻辑操作，例如小于或者大于。跟SQL不一样，在Java中null==null将返回true</p>
 
       
 
