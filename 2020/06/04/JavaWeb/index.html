@@ -6,23 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>深入浅出Java后端--Java基础 | Hexo</title>
+  <title>JavaWeb常见知识 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言：作为一个Java初级noob，话说没有梦想跟咸鱼有什么区别，研究生还剩两年半的愿望是battle一下阿里的Java后端职位，希望大家一起努力学习。写博客主要是因为记录一下自己的知识成长过程，还有的就是跟大家一起分享，Java基础的这篇文章大部分内容均来自《Java编程思想》和《深入理解Java虚拟机 第三版》以及自己的一些心得。伙伴们努力，未来可期。 博主选择Java的辛酸历程博主在编程道路">
+  <meta name="description" content="1.http协议有哪些部分组成？1.请求部分：1）请求行：请求方式 路径 协议及版本 2）请求头：请求头中保存的是本地浏览器信息的，是发送到服务器，被服务器解析的 3）请求体：请求体中存储的是请求数据，请求方式是POST时，请求体中才有内容； 2.响应部分：1）响应行：协议及版本 状态码 状态码描述 2）响应头：包含了服务器信息以及响应内容信息，被浏览器解析的 3）响应体：存储响应数据，给一般用户">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深入浅出Java后端--Java基础">
-<meta property="og:url" content="http://yoursite.com/2020/04/26/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E4%B9%8BJava%E5%90%8E%E7%AB%AF--Java%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="JavaWeb常见知识">
+<meta property="og:url" content="http://yoursite.com/2020/06/04/JavaWeb/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言：作为一个Java初级noob，话说没有梦想跟咸鱼有什么区别，研究生还剩两年半的愿望是battle一下阿里的Java后端职位，希望大家一起努力学习。写博客主要是因为记录一下自己的知识成长过程，还有的就是跟大家一起分享，Java基础的这篇文章大部分内容均来自《Java编程思想》和《深入理解Java虚拟机 第三版》以及自己的一些心得。伙伴们努力，未来可期。 博主选择Java的辛酸历程博主在编程道路">
+<meta property="og:description" content="1.http协议有哪些部分组成？1.请求部分：1）请求行：请求方式 路径 协议及版本 2）请求头：请求头中保存的是本地浏览器信息的，是发送到服务器，被服务器解析的 3）请求体：请求体中存储的是请求数据，请求方式是POST时，请求体中才有内容； 2.响应部分：1）响应行：协议及版本 状态码 状态码描述 2）响应头：包含了服务器信息以及响应内容信息，被浏览器解析的 3）响应体：存储响应数据，给一般用户">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/images/neicun.png">
-<meta property="og:image" content="http://yoursite.com/images/leetcode.png">
-<meta property="og:image" content="http://yoursite.com/images/liucheng1.png">
-<meta property="article:published_time" content="2020-04-26T01:04:54.368Z">
-<meta property="article:modified_time" content="2020-05-18T11:15:47.121Z">
+<meta property="og:image" content="http://yoursite.com/images/ad">
+<meta property="article:published_time" content="2020-06-04T00:43:05.928Z">
+<meta property="article:modified_time" content="2020-06-04T02:19:13.067Z">
 <meta property="article:author" content="Whig">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/neicun.png">
+<meta name="twitter:image" content="http://yoursite.com/images/ad">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -156,35 +154,125 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-深入浅出之Java后端--Java基础" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JavaWeb" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      深入浅出Java后端--Java基础
+      JavaWeb常见知识
     </h1>
   
 
         
-        <a href="/2020/04/26/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E4%B9%8BJava%E5%90%8E%E7%AB%AF--Java%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-04-26T01:04:54.368Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-26</time>
+        <a href="/2020/06/04/JavaWeb/" class="archive-article-date">
+  	<time datetime="2020-06-04T00:43:05.928Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前言：作为一个Java初级noob，话说没有梦想跟咸鱼有什么区别，研究生还剩两年半的愿望是battle一下阿里的Java后端职位，希望大家一起努力学习。写博客主要是因为记录一下自己的知识成长过程，还有的就是跟大家一起分享，Java基础的这篇文章大部分内容均来自《Java编程思想》和《深入理解Java虚拟机 第三版》以及自己的一些心得。伙伴们努力，未来可期。</p>
-<h2 id="博主选择Java的辛酸历程"><a href="#博主选择Java的辛酸历程" class="headerlink" title="博主选择Java的辛酸历程"></a>博主选择Java的辛酸历程</h2><p>博主在编程道路上走过挺多弯路，由于现在人工智能火的一塌糊涂，研一开学前学了有半年是学的Python语言，还记得当时听小甲鱼的课，后来慢慢会一些爬虫啊(主要就是爬取一些图片以及B站上的视频，还有部分教务系统什么的)UI界面绘画。后来听说深度学习火，又在Linux下玩了玩tensorflow。研一上学期开学，学长说所里项目都是c++和csharp,让我学习c++为了以后找工作，于是乎我又转战学习c++的道路历程，基本上知识点过了一遍(就是指针和内存管理的地方让我害怕，由于没学好数据结构)，这时候信心满满上GitHub找项目练习，害怕什么来什么项目上大部分基本用指针来写，放弃了放弃了感觉自己是一个程序道路上的白痴(学啥都不会都是半拉咔叽的)。虽然想努力但是迷茫啊不知道方向。转折点是由于疫情在家，所里给了我一个项目(Wpf)是用csharp语言，后来感觉csharp语言真好，都是面向对象的，但是毕业的主题方向还没有确定，还是想在c++和java中选择一门来当自己的主导方向，c++让我畏惧，不知道java怎么样，由于有了点基础学起java来挺快的。爱上Java的最主要原因就是Java的内存管理由gc来托管和java对象的创建和生命期与c++完全不同，对于我来说最主要的就是舍弃了指针。感觉爱死Java这门语言了。当然以上观点都是本人是菜鸡的基础上来撰写的,大牛还请路过。最后最重要一点建议的是想学好语言不论是哪一门最好有自己的方向和项目。</p>
-<h2 id="一Java-创建对象"><a href="#一Java-创建对象" class="headerlink" title="一Java 创建对象　　"></a>一Java 创建对象　　</h2><p>程序是怎么运行的呢对于java来说?</p>
-<h3 id="1-1存储到什么地方"><a href="#1-1存储到什么地方" class="headerlink" title="1.1存储到什么地方"></a>1.1存储到什么地方</h3><p>程序运行是，对象是怎么进行放置安排的呢？特别是内存是怎么样分配的呢？有五个不同 的地方可以存储数据：<br>&nbsp;<br>1)<strong>寄存器</strong>：这是最快的存储区，因为它位于不同于其他存储区的地方————处理器内部。但是寄存器数量有限，所以寄存器是根据需求进行分配的。<br><br>2)<strong>堆栈</strong>:位于通用RAM(随机访问存储器)中但通过堆栈指针可以从处理器那里获得直接支持.堆栈指针若向下移动,则分配新的内存;若向上移动,则释放哪些内存,这是一种快速有效的分配存储方法,仅次于寄存器。<br><br>3)<strong>堆</strong>:一种通用的内存池(也位于RAM区)，用于存放所有的Java对象。堆不同于堆栈的好处就是：编译器不要要知道存储的数据在堆里存活多长时间。因此在堆里分配存储有很大的灵活性。<br><br>4)<strong>常量存储</strong>:常量值通常直接存放在程序代码内部，这样做是安全的，因为他们永远不可能被改变。<br><br>5)<strong>非RAM存储</strong>:如果数据完全存活在程序之外，那么它可以不接受程序的任何控制，在程序没有运行是也可以存在。其中两个基本的例子就是<em>流对象</em>和<em>持久化对象</em>。在流对象中，对象转化成字节流，通常被发送给另一台机器。在“持久化对象”中，对象存放哎磁盘上，因此，即使程序终止，他们仍然可以保持自己的状态。</p>
-<h3 id="1-2Java内存模型"><a href="#1-2Java内存模型" class="headerlink" title="1.2Java内存模型"></a>1.2Java内存模型</h3><p><img src="/images/neicun.png" alt="java内存模型"></p>
-<p><strong>Java堆（Heap）</strong>：对于大多数应用来说，Java堆（Java Heap）是Java虚拟机所管理的内存中最大的一块。Java堆是被所有线程共享的一块内存区域，在虚拟机启动时创建。此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。<br>&nbsp;<br><strong>方法区（Method Area）</strong>:方法区（Method Area）与Java堆一样，是各个线程共享的内存区域，它用于存储已被虚拟机加载的<strong>类信息、常量、静态变量、即时编译器编译后的代码等数据</strong>。虽然Java虚拟机规范把方法区描述为堆的一个逻辑部分，但是它却有一个别名叫做Non-Heap（非堆），目的应该是与Java堆区分开来。<br>&nbsp;<br><strong>JVM栈（JVM Stacks）</strong>:Java虚拟机栈（Java Virtual Machine Stacks）也是线程私有的，它的生命周期与线程相同。虚拟机栈描述的是Java方法执行的内存模型：每个方法被执行的时候都会同时创建一个栈帧（Stack Frame）用于存储局部变量表、操作栈、动态链接、方法出口等信息。每一个方法被调用直至执行完成的过程，就对应着一个栈帧在虚拟机栈中从入栈到出栈的过程。</p>
-<h3 id="1-3实例"><a href="#1-3实例" class="headerlink" title="1.3实例"></a>1.3实例</h3><p>由于网上实例很多但都过于枯燥乏味，老是整class person phone什么的，我们来搞点算法来弄清楚Java的运行机制。此题是来自<a href="https://leetcode-cn.com/problems/wiggle-subsequence/" target="_blank" rel="noopener">LeetCode376</a>关于贪心算法的，点链接查看具体内容。<br><img src="/images/leetcode.png" alt="LeetCode"></p>
-<h3 id="1-31-程序"><a href="#1-31-程序" class="headerlink" title="1.31 程序"></a>1.31 程序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建一个类</span></span><br><span class="line"><span class="keyword">import</span> jdk.dynalink.beans.StaticClass;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SwingSquence</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>  <span class="keyword">int</span> <span class="title">SwingMaxLength</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.length&lt;<span class="number">2</span>) <span class="keyword">return</span> nums.length;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> Begin=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> Up=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> Down=<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">int</span> maxLength=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> State=Begin;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;nums.length;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">switch</span>(State) &#123;</span><br><span class="line">                <span class="keyword">case</span> Begin:</span><br><span class="line">                    <span class="comment">//这部分是开始情况 如果是相等的直接就是break() 算法当中的状态机</span></span><br><span class="line">                    <span class="keyword">if</span> (nums[i] &lt; nums[i - <span class="number">1</span>]) &#123;</span><br><span class="line">                        State = Down;</span><br><span class="line">                        maxLength++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (nums[i] &gt; nums[i - <span class="number">1</span>]) &#123;</span><br><span class="line">                        State = Up;</span><br><span class="line">                        maxLength++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> Up:</span><br><span class="line">                    <span class="comment">//这个部分上升阶段 如果还是上升阶段就break;再次循环 就是只要下降阶段 </span></span><br><span class="line">                    <span class="keyword">if</span> (nums[i] &lt; nums[i - <span class="number">1</span>]) &#123;</span><br><span class="line">                        State = Down;</span><br><span class="line">                        maxLength++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> Down:</span><br><span class="line">                    <span class="comment">//这个是下降阶段 如果还是下降就是break;再次循环 就是只要上升阶段</span></span><br><span class="line">                    <span class="keyword">if</span> (nums[i] &gt; nums[i - <span class="number">1</span>]) &#123;</span><br><span class="line">                        State = Up;</span><br><span class="line">                        maxLength++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"Unexpected value: "</span> + State);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxLength;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//主程序</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TanXinAlgotrithm</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] agrs)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] nums=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>&#125;;</span><br><span class="line">        SwingSquence algorithm=<span class="keyword">new</span> SwingSquence();</span><br><span class="line">        <span class="keyword">int</span> maxlength=algorithm.SwingMaxLength(nums);</span><br><span class="line">        System.out.println(maxlength);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="浅入分析过程"><a href="#浅入分析过程" class="headerlink" title="浅入分析过程"></a>浅入分析过程</h3><p><img src="/images/liucheng1.png" alt="流程1"><br>通过栈(Stack)堆(Heap)和方法区(Method Area)来简单分析一下。通过图解的方式来解答，首先第一步主程序运行方法区(Method Area)保存public static void main(String[] agrs)，第二步方法区加载到栈(Stack)内存，俗称进栈，int[] num数组的名称就是局部变量为int型。第三步int[] nums=<strong>new</strong> int[]{1,1,2,2,2};new是创建对象，而创建的对象又在哪呢，是在堆(Heap)当中，然后赋予一个地址假如是(0x111),之后这个地址值会赋值给栈(Stack)中int num[]。<br><br>画图心好累 ，今天就到这里啦 改天更新！！！！<br><br><br><br><br><br><br><br><br><br><br>为了学习交流，伙伴们可以加我的微信，我的微信号是：<strong>whig1101</strong></p>
+        <h2 id="1-http协议有哪些部分组成？"><a href="#1-http协议有哪些部分组成？" class="headerlink" title="1.http协议有哪些部分组成？"></a><table><tr><td bgcolor=LightGray>1.http协议有哪些部分组成？</td></tr></table></h2><p>1.请求部分：1）请求行：请求方式 路径 协议及版本 2）请求头：请求头中保存的是本地浏览器信息的，是发送到服务器，被服务器解析的 3）请求体：请求体中存储的是请求数据，请求方式是POST时，请求体中才有内容；</p>
+<p>2.响应部分：1）响应行：协议及版本 状态码 状态码描述 2）响应头：包含了服务器信息以及响应内容信息，被浏览器解析的 3）响应体：存储响应数据，给一般用户看的<br></p>
+<p>3、Get和Post的区别？<br>回答：Get请求方式：地址栏里会显示我们提交的数据（不安全），并且地址栏中支持提交少量数据，请求的数据存在请求行中；<br>Post请求方式：地址栏里不显示我们提交的数据信息（相对安全），可以提交大量数据，请求的数据存在请求正文中。</p>
+<h2 id="2-什么是Servlet？"><a href="#2-什么是Servlet？" class="headerlink" title="2.什么是Servlet？"></a><table><tr><td bgcolor=LightGray>2.什么是Servlet？</td></tr></table></h2><p>可以从两个方面去看Servlet：</p>
+<p>a、API：有一个接口servlet，它是servlet规范中定义的用来处理客户端请求的程序需要实现的顶级接口。<br>b、组件：服务器端用来处理客户端请求的组件，需要在web.xml文件中进行配置。</p>
+<h2 id="3、Servlet的生命周期，并说出Servlet和CGI的区别？"><a href="#3、Servlet的生命周期，并说出Servlet和CGI的区别？" class="headerlink" title="3、Servlet的生命周期，并说出Servlet和CGI的区别？"></a><table><tr><td bgcolor=LightGray>3、Servlet的生命周期，并说出Servlet和CGI的区别？</td></tr></table></h2><p>servlet有良好的生存期的定义，包括加载和实例化、初始化、处理请求以及服务结束。这个生存期由javax.servlet.servlet接口中的init、service、destroy方法表达。<br>web容器加载servlet，生命周期开始。</p>
+<p>通过调用servlet的init()方法进行servlet的初始化。通过调用service()方法实现根据请求的不同调用不同的do**()方法。结束服务，web容器调用servlet的destroy()方法。<br><img src="/images/ad" alt="servlet"></p>
+<p>区别：<br>Servlet处于服务器进程中，它通过多线程运行service()方法，一个实例可以服务于多个请求，并且实例一般不会被销毁；而CGI对每个请求都产生一个新的进程，服务完成后就销毁，所有效率低于Servlet</p>
+<h2 id="4-get和post请求的区别？"><a href="#4-get和post请求的区别？" class="headerlink" title=" 4.get和post请求的区别？"></a><table><tr><td bgcolor=LightGray> 4.get和post请求的区别？</td></tr></table></h2><p>a、get是用来从服务器上获取数据，而post是用来向服务器传递数据；</p>
+<p>b、get将表单中数据按照variable=value的形式，添加到action所指向的URL后面，并且两者用”？”连接，变量之间用”&amp;”连接；而post是将表单中的数据放在form的数据体中，按照变量与值对应的方式，传递到action所指定的URL。</p>
+<p>c、get是不安全的，因为在传输过程中，数据是被放在请求的URL中;而post的所有操作对用户来说都是不可见的。</p>
+<p>d、get传输的数据量小，这主要应为受url长度限制;而post可以传输大量的数据，所有上传文件只能用post提交。</p>
+<p>e、get限制form表单的数据集必须为ASCII字符；而post支持整个IS01 0646字符集。</p>
+<p>f、get是form表单的默认方法。</p>
+<h2 id="5-什么情况下调用doGet-和doPost-？"><a href="#5-什么情况下调用doGet-和doPost-？" class="headerlink" title="5.什么情况下调用doGet()和doPost()？"></a><table><tr><td bgcolor=LightGray>5.什么情况下调用doGet()和doPost()？</td></tr></table></h2><p>默认情况是调用doGet()方法，JSP页面中的Form表单的method属性设置为post的时候，调用的为doPost()方法；为get的时候，调用deGet()方法。</p>
+<h2 id="6-转发（Forward）和重定向（Redirect）的区别？"><a href="#6-转发（Forward）和重定向（Redirect）的区别？" class="headerlink" title=" 6.转发（Forward）和重定向（Redirect）的区别？"></a><table><tr><td bgcolor=LightGray> 6.转发（Forward）和重定向（Redirect）的区别？</td></tr></table></h2><p>1.转发是服务器行为，重定向是客户端行为。</p>
+<p>转发（Forword）:</p>
+<p>通过RequestDispatcher对象的forward（HttpServletRequest request,HttpServletResponse response）方法实现的。RequestDispatcher可以通过HttpServletRequest 的getRequestDispatcher()方法获得</p>
+<p>重定向（Redirect） ：</p>
+<p>是利用服务器返回的状态码来实现的。客户端浏览器请求服务器的时候，服务器会返回一个状态码。服务器通过HttpServletRequestResponse的setStatus(int status)方法设置状态码。如果服务器返回301或者302，则浏览器会到新的网址重新请求该资源。</p>
+<p>2.从地址栏显示来说</p>
+<p>forward是服务器请求资源，服务器直接访问目标地址的URL，把那个URL的响应内容读取过来，然后把这些内容再发给浏览器。浏览器根本不知道服务器发送的内容从哪里来的，所以它的地址栏还是原来的地址。<br>redirect是服务端根据逻辑，发送一个状态码,告诉浏览器重新去请求那个地址，所以地址栏显示的是新的URL。</p>
+<p>3.从数据共享来说</p>
+<p>forward：转发页面和转发到的页面可以共享request里面的数据.<br>redirect：不能共享数据.</p>
+<ol start="4">
+<li>从运用地方来说</li>
+</ol>
+<p>forward：一般用于用户登陆的时候,根据角色转发到相应的模块.<br>redirect：一般用于用户注销登陆时返回主页面和跳转到其它的网站等</p>
+<ol start="5">
+<li>从效率来说</li>
+</ol>
+<p>forward：高.<br>redirect：低.</p>
+<h2 id="7-Servlet与线程安全"><a href="#7-Servlet与线程安全" class="headerlink" title="7.Servlet与线程安全"></a><table><tr><td bgcolor=LightGray>7.Servlet与线程安全</td></tr></table></h2><p>Servlet不是线程安全的，多线程并发的读写会导致数据不同步的问题。 解决的办法是尽量不要定义name属性，而是要把name变量分别定义在doGet()和doPost()方法内。虽然使用synchronized(name){}语句块可以解决问题，但是会造成线程的等待，不是很科学的办法。<br>注意：多线程的并发的读写Servlet类属性会导致数据不同步。但是如果只是并发地读取属性而不写入，则不存在数据不同步的问题。因此Servlet里的只读属性最好定义为final类型的。</p>
+<h2 id="8-JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？"><a href="#8-JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？" class="headerlink" title="8.JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？"></a><table><tr><td bgcolor=LightGray>8.JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？</td></tr></table></h2><p>JSP是Servlet的扩展，本质上是Servlet的简易方式，更强调应用的外表表达。JSP编译后是”类Servlet”。Servlet和JSP最主要的不同点在于，Servlet的应用逻辑是在java文件中，并且完全从表示层中的HTML里分离开来。而JSP的情况是java和HTML可以组合成一个扩展名为.jsp的文件。JSP偏重于视图，Servlet偏重于业务逻辑。</p>
+<h2 id="9-JSP工作原理"><a href="#9-JSP工作原理" class="headerlink" title="9.JSP工作原理"></a><table><tr><td bgcolor=LightGray>9.JSP工作原理</td></tr></table></h2><p>JSP是一种Servlet，但是与HttpServlet的工作方式不太一样。HttpServlet是先由源代码编译为class文件后部署到服务器下，为先编译后部署。而JSP则是先部署后编译。JSP会在客户端第一次请求JSP文件时被编译为HttpJspPage类（接口Servlet的一个子类）。该类会被服务器临时存放在服务器工作目录里面</p>
+<p>由于JSP只会在客户端第一次请求的时候被编译 ，因此第一次请求JSP时会感觉比较慢，之后就会感觉快很多。如果把服务器保存的class文件删除，服务器也会重新编译JSP。</p>
+<p>开发Web程序时经常需要修改JSP。Tomcat能够自动检测到JSP程序的改动。如果检测到JSP源代码发生了改动。Tomcat会在下次客户端请求JSP时重新编译JSP，而不需要重启Tomcat。这种自动检测功能是默认开启的，检测改动会消耗少量的时间，在部署Web应用的时候可以在web.xml中将它关掉。</p>
+<h2 id="10-Request对象的主要方法有哪些？"><a href="#10-Request对象的主要方法有哪些？" class="headerlink" title="10.Request对象的主要方法有哪些？"></a><table><tr><td bgcolor=LightGray>10.Request对象的主要方法有哪些？</td></tr></table></h2><p>setAttribute(String name,Object)：设置名字为name的request 的参数值</p>
+<p>getAttribute(String name)：返回由name指定的属性值</p>
+<p>getAttributeNames()：返回request 对象所有属性的名字集合，结果是一个枚举的实例</p>
+<p>getCookies()：返回客户端的所有 Cookie 对象，结果是一个Cookie 数组</p>
+<p>getCharacterEncoding() ：返回请求中的字符编码方式 = getContentLength() ：返回请求的 Body的长度</p>
+<p>getHeader(String name) ：获得HTTP协议定义的文件头信息</p>
+<p>getHeaders(String name) ：返回指定名字的request Header 的所有值，结果是一个枚举的实例</p>
+<p>getHeaderNames() ：返回所以request Header 的名字，结果是一个枚举的实例</p>
+<p>getInputStream() ：返回请求的输入流，用于获得请求中的数据</p>
+<p>getMethod() ：获得客户端向服务器端传送数据的方法</p>
+<p>getParameter(String name) ：获得客户端传送给服务器端的有 name指定的参数值</p>
+<p>getParameterNames() ：获得客户端传送给服务器端的所有参数的名字，结果是一个枚举的实例</p>
+<p>getParameterValues(String name)：获得有name指定的参数的所有值</p>
+<p>getProtocol()：获取客户端向服务器端传送数据所依据的协议名称</p>
+<p>getQueryString() ：获得查询字符串</p>
+<p>getRequestURI() ：获取发出请求字符串的客户端地址</p>
+<p>getRemoteAddr()：获取客户端的 IP 地址</p>
+<p>getRemoteHost() ：获取客户端的名字</p>
+<p>getSession([Boolean create]) ：返回和请求相关 Session</p>
+<p>getServerName() ：获取服务器的名字</p>
+<p>getServletPath()：获取客户端所请求的脚本文件的路径</p>
+<p>getServerPort()：获取服务器的端口号</p>
+<p>removeAttribute(String name)：删除请求中的一个属性</p>
+<h2 id="11-request-getAttribute-和-request-getParameter-有何区别？"><a href="#11-request-getAttribute-和-request-getParameter-有何区别？" class="headerlink" title="11.request.getAttribute()和 request.getParameter()有何区别？"></a><table><tr><td bgcolor=LightGray>11.request.getAttribute()和 request.getParameter()有何区别？</td></tr></table></h2><p>a、request.getParameter()获取的类型是String；request.getAttribute()获取的类型是Object。</p>
+<p>b、request.getPrameter()获取的是POST/GET传递的参数值和URL中的参数；request.getAttribute()获取的是对象容器中的数据值/对象。</p>
+<p>c、request.setAttribute()和request.getAttribute()可以发送、接收对象；request.getParamter()只能接收字符串，官方不开放request.setParamter()（也就是没有这个方法）。</p>
+<p>setAttribute()和getAttribute()的传参原理：</p>
+<p>setAttribute()是应用服务器把这个对象放在该页面所对应的一块内存中去，当你的页面服务器重定向到另外一个页面时，应用服务器会把这块内存拷贝到另一个页面所对应的那块内存中。这个就可以通过getAttribute()获取到相应的参数值或者对象。</p>
+<h2 id="12-JSP有哪些内置对象？作用分别是什么？"><a href="#12-JSP有哪些内置对象？作用分别是什么？" class="headerlink" title="12.JSP有哪些内置对象？作用分别是什么？"></a><table><tr><td bgcolor=LightGray>12.JSP有哪些内置对象？作用分别是什么？</td></tr></table></h2><p>JSP一共有9个内置对象：</p>
+<p>request：负责得到客户端请求的信息，对应类型：javax.servlet.http.HttpServletRequest</p>
+<p>response:负责向客户端发出响应，对应类型：javax.servlet.http.HttpServletResponse</p>
+<p>session:负责保存同一客户端一次会话过程中的一些信息，对应类型：javax.servlet.http.httpsession</p>
+<p>out：负责管理对客户端的输出，对应类型：javax.serlvet.jsp.jspwriter</p>
+<p>application:表示整个应用环境的信息，对应类型：javax.servlet.servletcontext</p>
+<p>config:表示ServletConfig，对应类型：javax.servlet.servletconfig</p>
+<p>exception:表示页面中发生的异常，可以通过它获得页面异常信息，对应类型：java.lang.exception</p>
+<p>pagecontext:表示这个JSP页面上下文，对应类型：javax.servlet.jsp.pagecontext</p>
+<p>page:表示当前JSP页面本身。</p>
+<h2 id="13-JSP有哪些动作？作用分别是什么？"><a href="#13-JSP有哪些动作？作用分别是什么？" class="headerlink" title="13.JSP有哪些动作？作用分别是什么？"></a><table><tr><td bgcolor=LightGray>13.JSP有哪些动作？作用分别是什么？</td></tr></table></h2><p>JSP一共有以下6中基本动作：</p>
+<p>JSP：include       （当页面被请求的时候引入一个文件）</p>
+<p>JSP：forward      （将请求转到另一个页面）</p>
+<p>JSP：useBean     （获得JavaBean的一个实例）</p>
+<p>JSP：setProperty （设置JavaBean的属性）</p>
+<p>JSP：getProperty （获得JavaBean的属性）</p>
+<p>JSP：plugin         （根据浏览器类型为Java插件生成object或者embed两种标记）</p>
+<h2 id="14-讲解JSP中的四种作用域"><a href="#14-讲解JSP中的四种作用域" class="headerlink" title="14.讲解JSP中的四种作用域"></a><table><tr><td bgcolor=LightGray>14.讲解JSP中的四种作用域</td></tr></table></h2><p>JSP中的四种作用域包括page、request、session和application，具体来说：</p>
+<p>a、page是代表一个页面相关的对象和属性。一个页面由一个编译好的java servlet类（可以带有include指令，但不可以带有include动作）表示。这既包括servlet又包括编译成servlet的jsp页面。</p>
+<p>b、request是代表与web客户机发出的一个请求相关的对象和属性。一个请求可能跨越多个页面，涉及多个web组件（由于forware指令和include动作的关系）</p>
+<p>c、session是代表与用于某个web客户机的一个用户体验相关的对象和属性。一个web回话也可以经常跨域多个客户机请求。</p>
+<p>d、application是代表与整个web应用程序相关的对象和属性。这实质上是跨域整个web应用程序，包括多个页面、请求和回话的一个全局作用域。</p>
+<h2 id="15-Cookie和Session的的区别？"><a href="#15-Cookie和Session的的区别？" class="headerlink" title="15.Cookie和Session的的区别？"></a><table><tr><td bgcolor=LightGray>15.Cookie和Session的的区别？</td></tr></table></h2><p>1.由于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，这个机制就是Session.典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。这个Session是保存在服务端的，有一个唯一标识。在服务端保存Session的方法很多，内存、数据库、文件都有。集群的时候也要考虑Session的转移，在大型的网站，一般会有专门的Session服务器集群，用来保存用户会话，这个时候 Session 信息都是放在内存的，使用一些缓存服务比如Memcached之类的来放 Session。</p>
+<p>2.思考一下服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用 Cookie 来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在 Cookie 里面记录一个Session ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。有人问，如果客户端的浏览器禁用了 Cookie 怎么办？一般这种情况下，会使用一种叫做URL重写的技术来进行会话跟踪，即每次HTTP交互，URL后面都会被附加上一个诸如 sid=xxxxx 这样的参数，服务端据此来识别用户。</p>
+<p>3.Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。所以，总结一下：Session是在服务端保存的一个数据结构，用来跟踪用户的状态，这个数据可以保存在集群、数据库、文件中；Cookie是客户端保存用户信息的一种机制，用来记录用户的一些信息，也是实现Session的一种方式。</p>
+<h2 id="16-Tomcat-是什么？"><a href="#16-Tomcat-是什么？" class="headerlink" title="16.Tomcat 是什么？"></a><table><tr><td bgcolor=LightGray>16.Tomcat 是什么？</td></tr></table></h2><p>Tomcat 是来自 Apache Software Foundation 的开源服务器。它是一个 Web 应用服务器，这说明它支持 JavaServer Pages (JSP) 和 servlet 进行编程。</p>
+<p>自 2000 年初期，Tomcat 一直担当着最新的 Java Servlet 和 JSP 规范的参考实现。Tomcat 5.5 是编写本教程时的最新版本，支持最新的 Java Servlet 2.4 和 JavaServer Pages 2.0 标准。Tomcat 还包括一个受限的 Web 服务器，该服务器以独立模式（默认情况下）执行时能服务于静态网页。</p>
+<p>由于有多种开源库和扩展，因此 Tomcat 支持：</p>
+<p>使用 Apache Axis servlet 的 Web 服务</p>
+<p>开发框架，如 Apache Struts</p>
+<p>模板引擎，如 Apache Jakarta Velocity</p>
+<p>对象关系映射技术，如 Hibernate</p>
+<p>展示如何使用 Tomcat 学习 JSP、servlet 和 Web 服务编程。与 Tomcat 结合使用 Struts、Velocity 和 Hibernate 不属于本教程的范围。</p>
+<p>过去，因为配置和管理 Tomcat 需要高级专业知识，主要的 Tomcat 用户都是高级的服务器端应用程序开发人员。现在，由于 Tomcat 的 GUI 安装程序的出现、将服务器安装为系统服务的能力以及服务器功能的稳定性，甚至初级 Web 开发人员都能使用这个通用的服务器。</p>
 
       
 
@@ -264,7 +352,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/26/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E4%B9%8BJava%E5%90%8E%E7%AB%AF--Java%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/04/JavaWeb/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,15 +366,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/28/Java%E5%9F%BA%E7%A1%80%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java基础注意事项
-        
-      </div>
-    </a>
   
+    <a href="/2020/05/13/JDBC/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JDBC</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

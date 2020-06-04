@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MySQL | Hexo</title>
+  <title>MySQL学习笔录 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL">
+  <meta name="description" content="1.SQL语句分类 &amp;#8195;&amp;#8195;DQL（数据查询语言）： 查询语句，凡是sqlect语言都是DQL.&amp;#8195;&amp;#8195;DML（数据操作语言）： insert delete update对表中的数据进行增删改&amp;#8195;&amp;#8195;DDL (数据定义语言)： create drop alter 对表结构的增删改&amp;#8195;&amp;#8195;TCL（事务控制语言）： co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL学习笔录">
 <meta property="og:url" content="http://yoursite.com/2020/05/13/MySQL/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.SQL语句分类 &amp;#8195;&amp;#8195;DQL（数据查询语言）： 查询语句，凡是sqlect语言都是DQL.&amp;#8195;&amp;#8195;DML（数据操作语言）： insert delete update对表中的数据进行增删改&amp;#8195;&amp;#8195;DDL (数据定义语言)： create drop alter 对表结构的增删改&amp;#8195;&amp;#8195;TCL（事务控制语言）： co">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-13T08:10:07.359Z">
-<meta property="article:modified_time" content="2020-05-13T08:10:30.049Z">
+<meta property="article:modified_time" content="2020-05-18T11:15:58.070Z">
 <meta property="article:author" content="Whig">
 <meta name="twitter:card" content="summary">
   
@@ -157,7 +159,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      MySQL
+      MySQL学习笔录
     </h1>
   
 
@@ -170,7 +172,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1-SQL语句分类"><a href="#1-SQL语句分类" class="headerlink" title=" 1.SQL语句分类 "></a><table><tr><td bgcolor=LightGray> 1.SQL语句分类 </td></tr></table></h2><p>&#8195;&#8195;<strong>DQL（数据查询语言）：</strong> 查询语句，凡是sqlect语言都是DQL.<br><br>&#8195;&#8195;<strong>DML（数据操作语言）：</strong> insert delete update对表中的数据进行增删改<br><br>&#8195;&#8195;<strong>DDL (数据定义语言)：</strong> create drop alter 对表结构的增删改<br><br>&#8195;&#8195;<strong>TCL（事务控制语言）：</strong> commit提交事务 roolback回滚事务（T是Transaction事务的意思）<br><br>&#8195;&#8195;<strong>DCL（数据控制语言）：</strong> grant 授权 revoke 撤销权限等。</p>
+<h2 id="1-1Mysql准备语句"><a href="#1-1Mysql准备语句" class="headerlink" title=" 1.1Mysql准备语句 "></a><table><tr><td bgcolor=LightGray> 1.1Mysql准备语句 </td></tr></table></h2><p>&#8195;&#8195;<strong>show databases;</strong>&#8195;&#8195;(查看有哪些数据库，不是sql语句，是msyql语句)<br><br>&#8195;&#8195;<strong>create database (自己要创建的数据库名称)；</strong> &#8195;&#8195;创建一个数据库，不是sql语句 是mysql语句。<br><br>&#8195;&#8195;<strong>use mysql;</strong>  &#8195;&#8195;（mysql是系统自带数据库）使用数据库，不是sql语句，是msyql语句)<br><br>&#8195;&#8195;<strong>show tables;</strong>  &#8195;&#8195;查看当前数据库的表<br><br>&#8195;&#8195;<strong>source +路径</strong>   &#8195;&#8195;拖拽sql脚本（.sql结尾 里边大量的sql语句）<br><br>&#8195;&#8195;<strong>desc table；</strong>   &#8195;&#8195;查看表结构<br><br>&#8195;&#8195;<strong>select * from table;</strong> &#8195;&#8195;查看表中数据<br><br>&#8195;&#8195;<strong>select database（）;</strong>&#8195;&#8195;查看当前正在使用那个数据库<br><br>&#8195;&#8195;<strong>show create table tableNbame</strong>&#8195;&#8195;查看表的创建语句<br><br>&#8195;&#8195;<strong>select file*10(as 表头) from table</strong>字段可以参数数学运算 </p>
+<h2 id="1-2简单SQL语句"><a href="#1-2简单SQL语句" class="headerlink" title=" 1.2简单SQL语句 "></a><table><tr><td bgcolor=LightGray> 1.2简单SQL语句 </td></tr></table></h2><p>###1.21简单的表查询语句(DQL) ###<br><br>&#8195;&#8195;格式：<strong>select 字段1，字段2，字段3…from table;</strong> &#8195;&#8195;1.任何SQL语句以；结尾。2/SQL语句不区分大小写 3.SQL字符串单引号。<br><br>&#8195;&#8195;单个字段：<strong>select file from table;</strong><br><br>&#8195;&#8195;多个字段：<strong>select file1,file2,file3..from table;</strong><br><br>&#8195;&#8195;整张表：<strong>select * from table;</strong><br>###1.22条件查询(DQL) ###<br>&#8195;&#8195;格式：<strong>select file1,file2,file3..from table where (条件);</strong>&#8195;&#8195;执行顺序 先from(重那张表)—&gt; where条件—-&gt; 最后select字段<br><br>&#8195;&#8195;  where条件:<br>&#8195;&#8195;1.其中（<strong>&lt;&gt;</strong>）是为不等于  <br>&#8195;&#8195; 2. <strong>between ..and</strong> 在数字方面相当于[]; 在字符方面查找<strong>首字母</strong>相当于[) <br>&#8195;&#8195;3. 在数据库中 null不是一个值 代表什么都没有，空不是一个值 不能用等号来衡量 必须是is null or is not null;<br>&#8195;&#8195;4.<strong>and</strong>并且，<strong>or</strong>或者。and优先级大于or.<br>&#8195;&#8195;5. in是在的意思相当于or  not in  不在<br>&#8195;&#8195;<strong>6.模糊查询like</strong>  其中<strong>%</strong>代表任意字符，——是代表一个字符 \转义字符  例如  <strong>select file from table where file like ‘%a%’;</strong> 找到字符带a的。<strong>select file from table where file like ‘_a%’;</strong> 找到第二个字符是a的。<strong>select file from table where file like ‘%a;’</strong> 找到最后一个字符是a的<br>###1.22.表字段排序(DQL) ###<br>&#8195;&#8195;<strong>order by</strong>:默认是升序 select file1,file2 from table order by file;<br>&#8195;&#8195;<strong>order by file asc;</strong> 升序,select file,file1 from table order by file asc;<br>&#8195;&#8195;<strong>order by file desc;</strong> 降序，select file,file1 from table order by file desc;<br>&#8195;&#8195;<strong>select file ,file2 from table order by file asc,file1 desc;</strong> 在filr升序排列之后 相等的在比较file1 降序排列。越靠前的字段越起主导作用，当前面字段无法排序时才用到后面字段。</p>
+<h2 id="2-分组函数-多行处理函数"><a href="#2-分组函数-多行处理函数" class="headerlink" title=" 2 分组函数(多行处理函数) "></a><table><tr><td bgcolor=LightGray> 2 分组函数(多行处理函数) </td></tr></table></h2><p>&#8195;&#8195;1）<strong>count</strong> 累计； <strong>sum</strong> 求和  ； <strong>avg</strong> 平均值 ；<strong>min</strong> 最小值 ；<strong>max</strong>最大值； 所有的分组函数都是对某一种数据（字段）来完成的                     <br>&#8195;&#8195;2）格式： select 分组函数（字段） from table;                 <br>&#8195;&#8195;3）所有数据库明文规定凡是有null参与的运算最后结果为null，但是分组函数自动忽略Null;                                                                    <br>&#8195;&#8195;4) <strong>count(*)</strong>:是统计总记录条数  <strong>count(file)</strong> 是记录file字段不为null的数据总量数。</p>
+<h2 id="3-group-by-和-having"><a href="#3-group-by-和-having" class="headerlink" title=" 3.group by 和 having  "></a><table><tr><td bgcolor=LightGray> 3.group by 和 having  </td></tr></table></h2><p> &#8195;&#8195;<strong>group by :</strong> 按照某个字段或者某些字段进行分组。<br> &#8195;&#8195;<strong>having:</strong> 是对分组之后的数据再次进行过滤。 &#8195;&#8195;分组函数（count sum max min avg）一般都会和group by 联合使用，当一条sql语句没有group by 时，整张表的数据会自成一组。<br> &#8195;&#8195;查询顺序 <strong>from—&gt;where—&gt;group by—-&gt;having—–&gt;select—–&gt;order by</strong><br> &#8195;&#8195;当一条sql语句有group by，<strong>select 后面只能跟分组函数和分组字段</strong></p>
+
       
 
       
